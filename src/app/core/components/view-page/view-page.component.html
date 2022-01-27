@@ -21,7 +21,7 @@
                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <div id="gen-menu-contain" class="gen-menu-contain">
                          <ul id="gen-main-menu" class="navbar-nav ml-auto">
-                            <li class="menu-item active"><a href="#" class="menu-item active" aria-current="page">Home</a></li>
+                            <li class="menu-item active"><a routerLink="/auth/home/" class="menu-item active" aria-current="page">Home</a></li>
                             <li class="menu-item"><a href="#">Videos</a></li>
                             <li class="menu-item"><a href="#">Tv Shows</a></li>
                             <li class="menu-item"><a href="#">Movies</a>
@@ -76,17 +76,17 @@
                          <a href="javascript:void(0)" id="gen-user-btn"><i class="fa fa-user"></i></a>
                          <div class="gen-account-menu">
                             <ul class="gen-account-menu">
-                               <li><a href="#" data-target="#myProfileModal" data-toggle="modal"><i class="fa fa-user"></i>Profile </a></li>
-                               <li><a href="./dashboard.html"><i class="fa fa-indent"></i>dashboard</a></li>
-                               <li><a href="register.html"><i class="fa fa-list"></i>Video Playlist</a></li>
-                               <li><a href="./upload-video.html"> <i class="fa fa-upload"></i>Upload Video</a></li>
-                               <li><a href="#"><i class="fa fa-exit"></i>Logout</a></li>
+                               <li><a routerLink="/dashboard/settings/"><i class="fa fa-user"></i>Profile </a></li>
+                               <li><a routerLink="/dashboard/"><i class="fa fa-indent"></i>dashboard</a></li>
+                               <li><a href="#"><i class="fa fa-list"></i>Video Playlist</a></li>
+                               <li><a routerLink="/dashboard/add-video/"> <i class="fa fa-upload"></i>Upload Video</a></li>
+                               <li><a routerLink="/auth/home/"><i class="fa fa-sign-out-alt"></i>Logout</a></li>
                             </ul>
                          </div>
                       </div>
 
                      <div class="gen-btn-container">
-                         <a href="dashboard.html" class="gen-button">
+                         <a routerLink="/auth/register/" class="gen-button">
                             <div class="gen-button-block">
                                <span class="gen-button-line-left"></span>
                                <span class="gen-button-text">Join</span>
